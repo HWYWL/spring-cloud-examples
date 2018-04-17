@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: zuul-service
+
+server:
+  port: 9000
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+zuul:
+  routes:
+    # 智能路由，根据不同的请求请求会转发到不同的eureka-provider服务以均衡负载的方式访问
+    api-a:
+      path: /api-a/**
+      serviceId: eureka-provider
+    api-b:
+      path: /api-b/**
+      serviceId: eureka-provider-3

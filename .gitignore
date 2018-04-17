@@ -25,3 +25,4 @@ spring-cloud-eureka/.idea/
 spring-cloud-ribbon/.idea/
 spring-cloud-feign/.idea/
 spring-cloud-hystrix-dashboard/.idea/
+spring-cloud-zuul/.idea/
