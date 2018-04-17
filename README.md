@@ -5,3 +5,4 @@ Spring Cloud 学习例程
 - Consul服务治理实现----->spring-cloud-consul
 - 使用Ribbon实现负载均衡，服务提供者 Eureka + 服务消费者（rest + Ribbon）---->spring-cloud-ribbon
 - 使用Feign消费服务并实现负载均衡------>spring-cloud-feign
+- 使用feign的断路器监控(Hystrix Dashboard) --->spring-cloud-hystrix-dashboard
