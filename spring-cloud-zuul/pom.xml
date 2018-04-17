@@ -8,13 +8,13 @@
     <artifactId>spring-cloud-zuul</artifactId>
     <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
+
     <modules>
         <module>spring-cloud-zuul-service</module>
         <module>spring-cloud-eureka-service</module>
         <module>spring-cloud-eureka-provider-1</module>
         <module>spring-cloud-eureka-provider-2</module>
         <module>spring-cloud-eureka-provider-3</module>
+        <module>spring-cloud-zuul-filter</module>
     </modules>
-
-
 </project>
