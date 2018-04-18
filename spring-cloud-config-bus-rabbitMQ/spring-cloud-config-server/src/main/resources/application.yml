@@ -1,0 +1,37 @@
+#服务注册地址
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+spring:
+  application:
+    #高可用配置中心是通过服务id去自动发现config-server服务地址的，所以客户端不用配置spring.cloud.config.uri指向具体的地址了
+    name: config-server
+  cloud:
+    config:
+      #git仓库分支
+      label: master
+      server:
+        git:
+          #git仓库地址
+          uri: https://github.com/HWYWL/spring-cloud-examples.git
+          #配置仓库路径
+          search-paths: spring-cloud-config-bus-rabbitMQ/properties
+          #Git仓库如果是私有仓库需要填写用户名密码，示例是公开仓库，所以不配置密码
+          #username:
+          #password:
+  #Rabbitmq配置
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: yi
+    password: 123456
+
+server:
+  port: 8888
+
+#关闭刷新安全认证,除开health接口还依赖endpoints.health.sensitive的配置外，其他接口都不需要输入用户名和密码了
+management:
+  security:
+    enabled: false
