@@ -7,3 +7,5 @@ Spring Cloud 学习例程
 - 使用Feign消费服务并实现负载均衡------>spring-cloud-feign
 - 使用feign的断路器监控(Hystrix Dashboard) --->spring-cloud-hystrix-dashboard
 - 使用zuul网关基础、实现的智能路由、过滤器---->spring-cloud-zuul
+- 高可用的分布式配置中心 Spring Cloud Config--->spring-cloud-config
+- 高可用的分布式配置中心 Spring Cloud Config 集成 Eureka 服务---->spring-cloud-config-eureka

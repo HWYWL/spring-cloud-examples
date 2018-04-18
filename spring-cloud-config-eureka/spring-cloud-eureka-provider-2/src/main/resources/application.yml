@@ -1,0 +1,20 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+spring:
+  application:
+    name: eureka-provider
+  cloud:
+    config:
+      profile: dev
+      label: master
+      discovery:
+        enabled: true
+        #高可用配置中心是通过服务id去自动发现config-server服务地址的，所以不用配置spring.cloud.config.uri指向具体的地址了
+        service-id: config-server
+
+server:
+  port: 8082
+
