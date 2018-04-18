@@ -7,13 +7,12 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
 
 /**
  * 使用Feign消费服务并实现负载均衡
- * GitHub中的配置更新之后需要手动通过post请求执行
- * http://localhost:8081/refresh
- * http://localhost:8082/refresh
- * http://localhost:8083/refresh
- * 才能刷新配置
+ * GitHub中的配置更新之后只需要手动通过post请求执行
+ * http://localhost:8888/bus/refresh
+ * 这个总的配置服务就会全部刷新
+ * 如果配置webhooks可实现自动更新，可惜我是内网GitHub访问不进来o(╥﹏╥)o
  * @author YI
- * @date 2018-4-17 14:37:35
+ * @date 2018-4-18 18:17:09
  */
 @EnableFeignClients
 @EnableDiscoveryClient

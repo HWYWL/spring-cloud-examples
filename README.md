@@ -10,3 +10,4 @@ Spring Cloud 学习例程
 - 高可用的分布式配置中心 Spring Cloud Config--->spring-cloud-config
 - 高可用的分布式配置中心 Spring Cloud Config 集成 Eureka 服务---->spring-cloud-config-eureka
 - 高可用的分布式配置中心 Spring Cloud Config 中使用 Refresh实现自动刷新配置--->spring-cloud-config-eureka-refresh
+- 高可用的分布式配置中心 Spring Cloud Bus 消息总线集成（RabbitMQ）---->spring-cloud-config-bus-rabbitMQ
