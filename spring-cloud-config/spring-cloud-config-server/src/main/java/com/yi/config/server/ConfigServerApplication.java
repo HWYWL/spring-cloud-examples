@@ -6,6 +6,9 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 
 /**
  * Config Server服务端
+ * http://localhost:8888/springCloudConfig/pre/master
+ * http://localhost:8888/springCloudConfig/dev/master
+ * http://localhost:8888/springCloudConfig/test/master
  * @author YI
  * @date 2018-4-18 09:31:21
  */
