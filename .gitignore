@@ -28,3 +28,4 @@ spring-cloud-hystrix-dashboard/.idea/
 spring-cloud-zuul/.idea/
 spring-cloud-config/.idea/
 spring-cloud-config-server/.idea/
+spring-cloud-config-eureka-refresh/.idea/
