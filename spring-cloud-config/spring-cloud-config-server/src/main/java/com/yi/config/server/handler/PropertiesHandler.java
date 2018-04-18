@@ -1,9 +1,8 @@
-package com.yi.config.client.config;
+package com.yi.config.server.handler;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.env.PropertySourceLoader;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.PropertiesPropertySource;
 import org.springframework.core.env.PropertySource;
 import org.springframework.core.io.Resource;
@@ -14,13 +13,12 @@ import java.io.InputStreamReader;
 import java.util.Properties;
 
 /**
- * 解决乱码问题
+ * 解决读取GitHub配置文件乱码问题
  * @author YI
- * @date 2018-4-17 19:20:54
+ * @date 2018-4-18 14:19:17
  */
-@Configuration
-public class CustomMvcConfiguration implements PropertySourceLoader {
-    private static final Logger logger = LoggerFactory.getLogger(CustomMvcConfiguration.class);
+public class PropertiesHandler implements PropertySourceLoader {
+    private static final Logger logger = LoggerFactory.getLogger(PropertiesHandler.class);
 
     @Override
     public String[] getFileExtensions() {
