@@ -8,7 +8,7 @@ spring:
     name: eureka-provider
   cloud:
     config:
-      profile: dev
+      profile: test
       label: master
       discovery:
         enabled: true

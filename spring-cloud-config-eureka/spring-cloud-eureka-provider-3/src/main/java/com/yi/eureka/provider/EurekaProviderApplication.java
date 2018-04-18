@@ -5,7 +5,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * 服务提供方 将自身服务注册到 Eureka 注册中心，从而使服务消费方能够找到Provider-3
@@ -19,10 +23,23 @@ public class EurekaProviderApplication {
 
     @Value("${server.port}")
     String port;
+    @Value("${content}")
+    String content;
+    @Value("${file}")
+    String file;
+    @Value("${say}")
+    String say;
 
     @RequestMapping("/")
-    public String home() {
-        return "Hello world ,port:" + port;
+    @ResponseBody
+    public Map home() {
+        Map<String, Object> map = new HashMap<>();
+        map.put("port:", port);
+        map.put("content:", content);
+        map.put("file:", file);
+        map.put("say:", say);
+
+        return map;
     }
 
     public static void main(String[] args) {
