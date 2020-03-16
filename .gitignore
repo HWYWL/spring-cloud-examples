@@ -30,3 +30,5 @@ spring-cloud-config/.idea/
 spring-cloud-config-server/.idea/
 spring-cloud-config-eureka-refresh/.idea/
 spring-cloud-config-bus-rabbitMQ/.idea/
+spring-cloud-2020/.idea/
+spring-cloud-2020/spring-cloud-2020.iml
